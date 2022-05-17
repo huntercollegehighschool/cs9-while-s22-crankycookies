@@ -18,3 +18,13 @@ Enter a number or enter 0 to stop: 0
 Number of evens: 3
 
 '''
+
+n = int(input("Please enter a number: "))
+t = 0
+while n != 0:
+ if n%2 == 0:
+   t += 1
+   n = int(input("Please enter another number: "))
+ else:
+   n = int(input("Please enter another number: "))
+print("Number of evens:", str(t))
